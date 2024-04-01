@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./app.js" defer async></script>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="form-container">
+				<label for="following">Following list : </label>
+				<textarea rows="15" id="following" class="following"></textarea>
+			</div>
+			<div class="form-container">
+				<label for="following">Follower list : </label>
+				<textarea rows="15" id="follower" class="follower"></textarea>
+			</div>
+			<div class="btn-group">
+				<button type="submit" id="btn" class="btn btn-submit">Submit</button>
+			</div>
+			<div class="tab-section">
+				<div class="tab" id="tab-1">
+					<input
+						type="radio"
+						name="result"
+						id="not_following_you"
+						class="not_following_you"
+						value="0"
+						checked
+					/>
+					<label for="not_following_you" class="not_following_you"
+						>People not following you</label
+					>
+				</div>
+				<div class="tab" id="tab-2">
+					<input
+						type="radio"
+						name="result"
+						id="you_not_following"
+						class="you_not_following"
+						value="1"
+					/>
+					<label for="you_not_following">People you don't follow</label>
+				</div>
+			</div>
+			<div class="result">
+				<div class="tab-panel"></div>
+				<div class="tab-panel hidden"></div>
+			</div>
+		</div>
+	</body>
+</html>
